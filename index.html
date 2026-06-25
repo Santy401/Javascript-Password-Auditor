@@ -7,6 +7,15 @@
         <title>Password Calculator</title>
     </head>
     <body>
-        <script src="app.js"></script>
+        <div class="container">
+            <h1>Password Calculator</h1>
+            <form id="passwordForm">
+                <input type="text" placeholder="Password Length" id="length" class="form-control" name="length" required />
+                <button type="submit">Generate Password</button>
+            </form>
+            <div id="result"></div>
+        </div>
+        <script type="module" src="app.js">
+        </script>
     </body>
 </html>
