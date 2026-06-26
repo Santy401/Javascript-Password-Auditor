@@ -13,25 +13,55 @@ body {
     height: 100vh;
 }
 
+.navigation {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
 .container {
     background-color: #fff;
     padding: 20px;
+    height: 300px;
+    width: 700px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.container h1 {
+.PasswordCalculator h1 {
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-.container form {
+.PasswordCalculator {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.container input {
+.PasswordCalculator input {
     padding: 10px;
     margin-bottom: 10px;
     width: 200px;
@@ -39,7 +69,7 @@ body {
     border-radius: 5px;
 }
 
-.container button {
+.PasswordCalculator button {
     padding: 10px 20px;
     background-color: #007BFF;
     color: #fff;
@@ -48,7 +78,7 @@ body {
     cursor: pointer;
 }
 
-.container button:hover {
+.PasswordCalculator button:hover {
     background-color: #0056b3;
 }
 
@@ -56,4 +86,51 @@ body {
     margin-top: 20px;
     font-size: 1.2em;
     color: #333;
+}
+
+.PasswordGenerator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PasswordGenerator h1 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.PasswordGenerator input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.PasswordGenerator button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#PasswordGenerator button:hover {
+    background-color: #218838;
+}
+
+#generatedPasswordContainer {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#copyButton {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

@@ -8,14 +8,35 @@
     </head>
     <body>
         <div class="container">
-            <h1>Password Calculator</h1>
-            <form id="passwordForm">
-                <input type="text" placeholder="Password Length" id="length" class="form-control" name="length" required />
-                <button type="submit">Generate Password</button>
-            </form>
-            <div id="result"></div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#" class="section1">Password Calculator</a></li>
+                    <li><a href="#" class="section2">Password Generator</a></li>
+                </ul>
+            </nav>
+            
+            <div class="PasswordCalculator">
+                <h1>Password Calculator</h1>
+                <form id="passwordForm">
+                    <input type="text" placeholder="Password Length" id="length" class="form-control" name="length" required />
+                    <button type="submit">Analyze Password</button>
+                </form>
+                <div id="result"></div>
+            </div>
+
+            <div class="PasswordGenerator" style="display: none;">
+                <h1>Password Generator</h1>
+                <form id="generatorForm">
+                    <input type="number" min="1" max="128" placeholder="Password Length" id="genLength" class="form-control" name="genLength" required />
+                    <button type="submit">Generate Password</button>
+                </form>
+                <div id="generatedPasswordContainer" style="display: none;">
+                    <input type="text" id="generatedPassword" placeholder="Generated Password" readonly />
+                    <button id="copyButton" style="display: flex;">Click to copy</button>
+                </div>
+            </div>
         </div>
-        <script type="module" src="app.js">
-        </script>
+        <script type="module" src="app.js"></script>
+        <script src="ui.js"></script>
     </body>
 </html>
